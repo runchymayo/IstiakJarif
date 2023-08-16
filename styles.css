@@ -1,0 +1,137 @@
+/* Reset and global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header styles */
+
+header {
+    background-color: #000000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #f39c12;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #b1afaf;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #333;
+}
+
+/* Hero section styles */
+
+.hero {
+    background: url(bg2.jpg) no-repeat center center/cover;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e87e04;
+}
+
+/* Main section styles */
+
+.main-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #cecece;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .about {
+        padding: 0 20px;
+    }
+}
